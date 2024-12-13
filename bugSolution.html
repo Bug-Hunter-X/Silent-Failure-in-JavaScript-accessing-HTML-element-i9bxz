@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error Solution</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+  <script>
+    try {
+      document.getElementById('nonExistentElement').innerHTML = "Hello";
+    } catch (error) {
+      console.error("Error accessing element:", error);
+      // Handle the error appropriately (e.g., display a user-friendly message)
+      alert('An error occurred while accessing a page element.');
+    }
+  </script>
+</body>
+</html>
